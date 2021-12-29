@@ -26,10 +26,10 @@ router.get("/api/getTest", (req: express.Request, res: express.Response) => {
 
 //Router
 const posts = require("./routes/posts");
-app.use("/posts", posts);
+app.use("/api/posts", posts);
 
-const users = require("./routes/users");
-app.use("/users", users);
+const user = require("./routes/user");
+app.use("/api/user", user);
 
 //Server
 const PORT = env.PORT || 5000;
