@@ -32,3 +32,9 @@ $ docker-compose up
 ```bash
 DATABASE_URL="mysql://user:password@localhost:3306/mydb"
 ```
+
+## Migrate Schema
+
+```bash
+$ npx prisma db push
+```
