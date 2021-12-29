@@ -8,10 +8,13 @@
 - ESLint
 - Prettier
 - dotenv
+  and....
+
+# PRISMA
 
 ### Git Clone
 
 ```bash
-git clone https://github.com/Cosmo2357/express-boiler-plate.git
+
 
 ```
