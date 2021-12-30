@@ -19,17 +19,12 @@ app.use((req, res, next) => {
   next();
 });
 
-router.get("/api/getTest", (req: express.Request, res: express.Response) => {
-  console.log("get request");
-  res.send("Hello world");
-});
-
 //Router
-const posts = require("./routes/posts");
-app.use("/api/posts", posts);
+const posts = require("./routes/post");
+app.use("/posts", posts);
 
 const user = require("./routes/user");
-app.use("/api/user", user);
+app.use("/users", user);
 
 //Server
 const PORT = env.PORT || 5000;
